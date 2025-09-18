@@ -18,7 +18,7 @@ def hello():
 
 @app.route("/getAllDataInHtml")
 def getAllData():
-    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit")
+    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit") # [[1,"Arciere","50"],[2,"Gigante","300"]] in MariaDB
     myresult = mycursor.fetchall()
     result = [];
     for x in myresult:
